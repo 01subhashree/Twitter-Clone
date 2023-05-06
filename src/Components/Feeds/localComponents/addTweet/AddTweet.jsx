@@ -1,11 +1,10 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import style from "./AddTweet.module.css";
 import { BsFileImage } from "react-icons/bs";
 import { AiOutlineFileGif, AiOutlineSchedule } from "react-icons/ai";
 import { BiPoll } from "react-icons/bi";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
 import { CiLocationOn } from "react-icons/ci";
-import { borderRadius } from "@mui/system";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import {
   tweetDialog,

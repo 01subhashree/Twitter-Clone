@@ -188,7 +188,7 @@ function PublicDropDown() {
   return (
     <div id={style.feedTypeBtn}>
       Everyone
-      <BiChevronDown />{" "}
+      <BiChevronDown />
     </div>
   );
 }

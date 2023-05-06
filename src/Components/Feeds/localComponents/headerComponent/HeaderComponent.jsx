@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import style from "./HeaderComponent.module.css";
 
 export default function HeaderComponent() {
