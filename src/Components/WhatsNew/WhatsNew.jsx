@@ -1,16 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import style from "./WhatsNew.module.css";
-import Dropdown from "rsuite/Dropdown";
 import "rsuite/dist/rsuite.min.css";
-import CodeIcon from "@rsuite/icons/Code";
-import PageIcon from "@rsuite/icons/Page";
-import DetailIcon from "@rsuite/icons/Detail";
-import FolderFillIcon from "@rsuite/icons/FolderFill";
-import FileDownloadIcon from "@rsuite/icons/FileDownload";
-import FileUploadIcon from "@rsuite/icons/FileUpload";
 import { useState } from "react";
-import { Button, Dialog, DialogContent, DialogTitle } from "@mui/material";
 
 const Tweets = [
   {
@@ -45,10 +37,6 @@ const Tweets = [
   },
 ];
 
-const stylePop = {
-  background: "transparent",
-};
-
 export default function WhatsNew() {
   // const [pop, setPop] = useState(false);
   const [allNew, setAllNew] = useState(Tweets);
@@ -61,7 +49,7 @@ export default function WhatsNew() {
   return (
     <div className={style.MainDiv}>
       <p className={style.heading}>What's happening</p>
-      {allNew.map((ele, index) => (
+      {allNew.map((ele) => (
         <div className={style.Div} key={ele.hashTag}>
           <div>
             <p className={style.para1}>{ele.topics}</p>
@@ -77,22 +65,26 @@ export default function WhatsNew() {
           {showInt ? (
             ""
           ) : (
-            <span>
-              <button
-                onClick={() => {
-                  setShowInt(true);
-                }}
-              >
-                ✔Back
-              </button>{" "}
-              <button
-                onClick={() => {
-                  handleTweetDelete(ele.id);
-                }}
-              >
-                ❌Delete
-              </button>
-            </span>
+            <div className={style.button}>
+              <span>
+                <button
+                  onClick={() => {
+                    setShowInt(true);
+                  }}
+                >
+                  ✔Back
+                </button>
+              </span>
+              <span>
+                <button
+                  onClick={() => {
+                    handleTweetDelete(ele.id);
+                  }}
+                >
+                  ❌Delete
+                </button>
+              </span>
+            </div>
           )}
         </div>
       ))}

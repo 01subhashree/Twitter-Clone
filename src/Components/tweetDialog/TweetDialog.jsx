@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import style from "./TweetDialog.model.css";
 import { Dialog, DialogContent, DialogTitle } from "@mui/material";
 import { CgClose } from "react-icons/cg";
