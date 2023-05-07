@@ -65,7 +65,13 @@ export default function LoginPage() {
       // console.log(userId);
       localStorage.setItem("currentUser", enteredEmail);
       navigate("/");
-    } else alert("Enter valid informations");
+    } else if (
+      allUsersFromLocal.find(
+        (ele) => ele.email !== enteredEmail || ele.password !== enteredPassword
+      )
+    ) {
+      alert("Enter valid informations");
+    }
   }
 
   return (
