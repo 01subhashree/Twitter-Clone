@@ -145,9 +145,9 @@ export default function RegisterPage() {
                 onChange={(e) => setFullName(e.target.value)}
               />
               {fullName == "" ? (
-                <h5 style={{ margin: "-12px 0 -12px 0", color: "red" }}>
+                <p style={{ margin: "-12px 0 -12px 0", color: "red" }}>
                   Enter Name
-                </h5>
+                </p>
               ) : (
                 ""
               )}
@@ -184,9 +184,9 @@ export default function RegisterPage() {
               {/^\w+([\.-]?\w+)*@(?:\w+\.)+(?:com|in)$/.test(email) ? (
                 ""
               ) : (
-                <h5 style={{ margin: "-12px 0 -12px 0", color: "red" }}>
+                <p style={{ margin: "-12px 0 -12px 0", color: "red" }}>
                   Enter a valid Email
-                </h5>
+                </p>
               )}
               <div
                 onClick={() => setIsPhone(!isPhone)}
@@ -220,9 +220,9 @@ export default function RegisterPage() {
               {/^(?=.*\d).{8,}$/.test(password) ? (
                 ""
               ) : (
-                <h5 style={{ margin: "-12px 0 -12px 0", color: "red" }}>
+                <p style={{ margin: "-12px 0 -12px 0", color: "red" }}>
                   Password Contain 8 character includes 1 number{" "}
-                </h5>
+                </p>
               )}
             </div>
             <h3 style={{ marginTop: 30 }}>Date of birth</h3>

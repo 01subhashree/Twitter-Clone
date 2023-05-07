@@ -5,7 +5,8 @@
     background-color: #f7f9f9;
     /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
     border-radius: 2rem;
-    width: 26rem;
+    width: 100%;
+    gap: 2rem;
 }
 .heading{
     font-size: 1.6rem;
