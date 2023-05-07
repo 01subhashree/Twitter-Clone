@@ -83,7 +83,6 @@ export default function SideBar() {
           <UsersName />
         </span>
       </div>
-      {/* <TweetDialog onClick={handleTweet} /> */}
       <Dialog
         PaperProps={{
           style: { borderRadius: 15 },

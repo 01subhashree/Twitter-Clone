@@ -68,16 +68,12 @@ export default function LoginPage() {
     } else alert("Enter valid informations");
   }
 
-  const handleDialog = () => {
-    // setIsVisible(!isVisible);
-  };
-
   return (
     <Dialog open={isVisible} className={style.mainDiv}>
       <div className={style.wrapper}>
         <DialogTitle className={style.icons}>
           <span className={style.icon1}>
-            <ImCross onClick={handleDialog} />
+            <ImCross />
           </span>
           <span className={style.icon2}>
             <TfiTwitterAlt />
