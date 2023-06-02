@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 1rem 0 0 0;
-  background-color: #f7f9f9;
+  background-color: #f7f9f96b;
   border-radius: 2rem;
   width: 100%;
   height: fit-content;
@@ -15,7 +15,7 @@
     padding: 0.8rem;
 }
 .Div:hover {
-  background-color: rgba(219, 230, 230, 0.786);
+  background-color: rgb(102 100 100 / 10%);
 }
 .heading {
   font-size: 1.5rem;

@@ -1,8 +1,7 @@
-import { Autocomplete, TextField ,InputAdornment } from "@mui/material";
-import { borderRadius } from "@mui/system";
+import { Autocomplete, TextField, InputAdornment } from "@mui/material";
 import { BiSearch } from "react-icons/bi";
 const textFieldCss = {
-  border: "0.01px solid #00acee",
+  // border: "0.01px solid #00acee",
   backgroundColor: "white",
   borderRadius: 50,
   "& label": {
@@ -13,16 +12,6 @@ const textFieldCss = {
     marginLeft: "20px",
   },
 };
-const options = [
-  "Apple",
-  "Banana",
-  "Cherry",
-  "Date",
-  "Elderberry",
-  "Fig",
-  "Grape",
-  "Honeydew",
-];
 
 const style = {
   width: "20rem",
@@ -38,26 +27,29 @@ export default function SearchBar() {
   return (
     <div>
       <Autocomplete
-        sx={{ ...style , }}
-        options={options}
+        sx={{ ...style }}
         renderInput={(params) => (
-          <TextField  {...params} sx={{ ...textFieldCss }} InputProps={{
-            disableUnderline: true,
-            endAdornment: (
-              <InputAdornment position="start">
-                <BiSearch
-                  style={{
-                    color: "#798791",
-                    width: "60px",
-                    
-                    height: "30px",
-                    marginBottom:'35px',
-                    
-                  }}
-                />
-              </InputAdornment>
-            ),
-          }} label="Search Twitter" variant="filled" />
+          <TextField
+            {...params}
+            sx={{ ...textFieldCss }}
+            InputProps={{
+              disableUnderline: true,
+              endAdornment: (
+                <InputAdornment position="start">
+                  <BiSearch
+                    style={{
+                      color: "#798791",
+                      width: "60px",
+                      height: "30px",
+                      marginBottom: "35px",
+                    }}
+                  />
+                </InputAdornment>
+              ),
+            }}
+            label="Search Twitter"
+            variant="filled"
+          />
         )}
       />
     </div>

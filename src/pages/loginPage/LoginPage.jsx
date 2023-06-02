@@ -33,12 +33,15 @@ const btnstyle = {
 
 const textFieldCss = {
   border: "0.01px solid #00acee",
+  width: "350px",
   marginBottom: "0.5rem",
   backgroundColor: "#ffffff",
   borderRadius: 2,
+  "@media (max-width: 700px)": {
+    width: "300px",
+  },
   "@media (max-width: 400px)": {
-    width: "150px",
-    marginLeft: "20px",
+    width: "200px",
   },
 };
 
